@@ -4,7 +4,8 @@ Compile Scala source from Leiningen.
 
 ## Usage
 
-Add `[lein-scalac "0.1.0"]` to `:plugins` project.clj. (Or
+Add `[lain-scalac "0.1.2]` for scala 2.12 to `:plugins` project.clj.
+Add `[lein-scalac "0.2.13"]` for scala 2.13 to `:plugins` project.clj. (Or
 `:dev-dependencies` on Leiningen versions earlier than 1.7.0)
 
 Set `:scala-source-paths` in project.clj, usually to "src/scala", and
@@ -21,10 +22,14 @@ For Leiningen 1.x support, need to add `leiningen.hooks.scalac` to
 If you need runtime features of Scala you'll have to declare a
 dependency on `scala-library` like so:
 
-`:dependencies [org.scala-lang/scala-library "2.9.1"]`
+`:dependencies [org.scala-lang/scala-library "2.12.17"]`
+
+`:dependencies [org.scala-lang/scala-library "2.13.10"]`
 
 ## License
 
 Copyright © 2012 Phil Hagelberg and Scott Clasen
+
+Copyright © 2023 Alex Menshov
 
 Distributed under the Eclipse Public License, the same as Clojure.

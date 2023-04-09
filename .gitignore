@@ -6,3 +6,5 @@ pom.xml
 /.lein-plugins/checksum
 /test-project/.lein-plugins/checksum
 target
+.idea
+*.iml
